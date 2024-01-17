@@ -12,11 +12,8 @@ include device/xiaomi/chime/BoardConfig.mk
 # Assert
 TARGET_OTA_ASSERT_DEVICE := lime,lemon,pomelo,chime,juice
 
-# Kernel - Prebuilt images
-#BOARD_KERNEL_SEPARATED_DTBO := true
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/images/dtbo.img
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/images/dtb.img
-BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
+# Kernel
+BOARD_KERNEL_SEPARATED_DTBO := true
 
 # NFC
 ODM_MANIFEST_SKUS += lemon
